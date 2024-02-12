@@ -55,7 +55,7 @@ const DATA: IData[] = [
     },
     {
         id: 8,
-        value: 'x',
+        value: '*',
         icon: MdOutlineClear,
         color: '#7a95e0'
     },
@@ -82,7 +82,7 @@ const DATA: IData[] = [
     },
     {
         id: 12,
-        value: 'x',
+        value: '-',
         icon: FiMinus,
         color: '#7a95e0'
     },
@@ -109,7 +109,7 @@ const DATA: IData[] = [
     },
     {
         id: 16,
-        value: 'x',
+        value: '+',
         icon: GoPlus,
         color: '#7a95e0'
     },
@@ -136,7 +136,7 @@ const DATA: IData[] = [
     },
     {
         id: 20,
-        value: 'x',
+        value: '=',
         icon: RiEqualFill,
         color: '#7a95e0'
     },
