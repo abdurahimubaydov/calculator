@@ -177,6 +177,10 @@ export const CalculatorElement = ({ value, Icon, setExpression, expression }: IE
                         setExpression(expression += '')
                     } else if (expression.length === 0) {
                         setExpression(expression += '')
+                    } else if (expression[0] === '0') {
+                        let newExp = expression.slice(1, expression.length)
+
+                        setExpression(eval(newExp))
                     } else {
                         setExpression(eval(expression).toString())
                     }
@@ -190,6 +194,17 @@ export const CalculatorElement = ({ value, Icon, setExpression, expression }: IE
     }
 
 
+    else if (value === '%') {
+        return (
+            <GridItem>
+                <Button width={'100%'} onClick={() => {
+                    setExpression(expression += '')
+                }}>
+                    <Icon size={20} />
+                </Button>
+            </GridItem>
+        )
+    }
 
 
     return (
